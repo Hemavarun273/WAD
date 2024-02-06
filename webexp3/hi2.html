@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #97c0e4;
+      color: rgb(176, 73, 73);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <h2><b>Quiz!!</b></h2>
+  <div id="quiz-content">
+    <div class="question">
+      <p>How many bones do we have in an ear?</p>
+      <input type="text" id="userAnswer">
+    </div>
+  </div>
+  <button onclick="checkAnswer()" class="submit-btn">Submit Answer</button>
+</div>
+
+<script>
+  const correctAnswer = "Three";
+
+  function checkAnswer() {
+    const userAnswer = document.getElementById("userAnswer").value;
+
+    if (userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+      alert("Correct!");
+    } else {
+      alert(`Incorrect! The correct answer is: ${correctAnswer}`);
+    }
+  }
+</script>
+
+</body>
+</html>
