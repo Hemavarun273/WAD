@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #d55656;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #282525;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        img {
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            padding-bottom: 80px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            color: #007bff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .experience-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Tatipudi Hemavarun</h1>
+    <h2><i>CSE AI ML Student</i></h2>
+    <p>Contact: <a href="mailto:htatipud@gitam.in">htatipud@gitam.in</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tatipudi-hemavarun-32016a256/">https://www.linkedin.com/in/tatipudi-hemavarun-32016a256/</a></p>
+</header>
+
+<div class="content-wrapper">
+    <!-- Introduction -->
+    <section>
+        <table>
+            <tr>
+                <td><img src="hi.jpg.jpg" alt="Image not Available." width="200"></td>
+                <td>
+                    <p>As a passionate Computer Science Engineering (CSE) student, I possess a keen interest in management and operations. I am committed to pursuing an MBA to further enhance my skills and knowledge in this dynamic field. I believe that combining my technical expertise with management education will enable me to make impactful contributions to the industry.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h1>Education</h1>
+        <ul>
+            <li>CBSE, Timpany School (2007-2019)</li>
+            <li>Intermediate, Aakash Institute (2019-2021)</li>
+            <li>Bachelors in Computer Science, Gitam (2021-2025)</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h1>Skills</h1>
+        <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Marketing</li>
+            <li>Client Raising</li>
+        </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+        <h1>Achievements</h1>
+        <ul>
+            <li>Devised and published a complete marketing strategy for a competitor of renowned potato chips "Lays"</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+        <h1>Experience</h1>
+        <div class="experience-item">
+            <h3>Team Leader, Incoming Global Sector</h3>
+            <p>I specialize in conducting market research to identify potential clients and effectively communicate the value of engaging our volunteers to support their business objectives. Collaborated with cross-functional teams to develop and implement strategic initiatives.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Marketing Member, AIESEC in Visakhapatnam</h3>
+            <p>Contributed to the development and execution of marketing campaigns, including social media strategies and event planning. Assisted in building partnerships with local businesses to expand our reach and impact in the community.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Machine Learning Internship, Academor</h3>
+            <p>Gained practical experience in machine learning algorithms and techniques through hands-on projects. Assisted in data preprocessing, model development, and performance evaluation under the guidance of experienced mentors.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; Tatipudi Hemavarun. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for animations and interactivity -->
+<script>
+    // Example: Add animation to the header
+    const header = document.querySelector('header');
+    header.style.opacity = '0';
+    header.style.transform = 'translateY(-50px)';
+    setTimeout(() => {
+        header.style.transition = 'opacity 1s, transform 1s';
+        header.style.opacity = '1';
+        header.style.transform = 'translateY(0)';
+    }, 500);
+
+    // Example: Add hover effect to the sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.addEventListener('mouseenter', () => {
+            section.style.transform = 'scale(1.02)';
+            section.style.transition = 'transform 0.5s';
+        });
+        section.addEventListener('mouseleave', () => {
+            section.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
+</body>
+</html>
